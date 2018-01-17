@@ -97,7 +97,7 @@
 				}, error: function (xhr, ajaxOptions, thrownError) {
 
 					
-					toastr.error(xhr.status + ': ' + thrownError);
+					toastr.error(xhr.responseJSON.message);
 			     }
 			});
 
